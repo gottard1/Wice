@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		851B66152AA261C80042F80E /* WiceOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851B66142AA261C80042F80E /* WiceOSApp.swift */; };
+		851B66172AA261C80042F80E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851B66162AA261C80042F80E /* HomeView.swift */; };
+		851B66192AA261CB0042F80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851B66182AA261CB0042F80E /* Assets.xcassets */; };
+		851B661C2AA261CB0042F80E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851B661B2AA261CB0042F80E /* Preview Assets.xcassets */; };
+		851B661F2AA261CB0042F80E /* WiceOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 851B66122AA261C80042F80E /* WiceOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		856AB8AE2A3CE47800C125F3 /* WiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856AB8AD2A3CE47800C125F3 /* WiceApp.swift */; };
+		856AB8B02A3CE47800C125F3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856AB8AF2A3CE47800C125F3 /* HomeView.swift */; };
+		856AB8B22A3CE47900C125F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856AB8B12A3CE47900C125F3 /* Assets.xcassets */; };
+		856AB8B52A3CE47900C125F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856AB8B42A3CE47900C125F3 /* Preview Assets.xcassets */; };
+		85C7ECDA2AA753EC008424CF /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7ECD92AA753EC008424CF /* DrawView.swift */; };
+		85C7ECDD2AA75410008424CF /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7ECDC2AA75410008424CF /* CanvasView.swift */; };
+		85C7ECE52AA76696008424CF /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7ECE42AA76696008424CF /* RoundedImage.swift */; };
+		85CD999C2AAF4A5900CCE68A /* WatchOSConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CD999B2AAF4A5900CCE68A /* WatchOSConnector.swift */; };
+		85CD999E2AAF4CE700CCE68A /* WatchOSConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CD999D2AAF4CE700CCE68A /* WatchOSConnector.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		851B661D2AA261CB0042F80E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 856AB8A22A3CE47800C125F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 851B66112AA261C80042F80E;
+			remoteInfo = "WiceOS Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		851B66202AA261CB0042F80E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				851B661F2AA261CB0042F80E /* WiceOS Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		851B66122AA261C80042F80E /* WiceOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WiceOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		851B66142AA261C80042F80E /* WiceOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiceOSApp.swift; sourceTree = "<group>"; };
+		851B66162AA261C80042F80E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		851B66182AA261CB0042F80E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		851B661B2AA261CB0042F80E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		856AB8AA2A3CE47800C125F3 /* Wice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		856AB8AD2A3CE47800C125F3 /* WiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiceApp.swift; sourceTree = "<group>"; };
+		856AB8AF2A3CE47800C125F3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		856AB8B12A3CE47900C125F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		856AB8B42A3CE47900C125F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		85C7ECD92AA753EC008424CF /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		85C7ECDC2AA75410008424CF /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		85C7ECE42AA76696008424CF /* RoundedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		85CD999B2AAF4A5900CCE68A /* WatchOSConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOSConnector.swift; sourceTree = "<group>"; };
+		85CD999D2AAF4CE700CCE68A /* WatchOSConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOSConnector.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		851B660F2AA261C80042F80E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		856AB8A72A3CE47800C125F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		851B66132AA261C80042F80E /* WiceOS Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				85CD99992AACDE3900CCE68A /* Commom */,
+				85CD99982AACDE3000CCE68A /* Scenes */,
+			);
+			path = "WiceOS Watch App";
+			sourceTree = "<group>";
+		};
+		851B661A2AA261CB0042F80E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				851B661B2AA261CB0042F80E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		856AB8A12A3CE47800C125F3 = {
+			isa = PBXGroup;
+			children = (
+				856AB8AC2A3CE47800C125F3 /* Wice */,
+				851B66132AA261C80042F80E /* WiceOS Watch App */,
+				856AB8AB2A3CE47800C125F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		856AB8AB2A3CE47800C125F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				856AB8AA2A3CE47800C125F3 /* Wice.app */,
+				851B66122AA261C80042F80E /* WiceOS Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		856AB8AC2A3CE47800C125F3 /* Wice */ = {
+			isa = PBXGroup;
+			children = (
+				85C7ECD62AA75344008424CF /* Commom */,
+				85C7ECD72AA753A8008424CF /* Scenes */,
+			);
+			path = Wice;
+			sourceTree = "<group>";
+		};
+		856AB8B32A3CE47900C125F3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				856AB8B42A3CE47900C125F3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		85C7ECD62AA75344008424CF /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+				856AB8AD2A3CE47800C125F3 /* WiceApp.swift */,
+				856AB8B32A3CE47900C125F3 /* Preview Content */,
+				856AB8B12A3CE47900C125F3 /* Assets.xcassets */,
+			);
+			path = Commom;
+			sourceTree = "<group>";
+		};
+		85C7ECD72AA753A8008424CF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				85CD999B2AAF4A5900CCE68A /* WatchOSConnector.swift */,
+				85C7ECDE2AA75510008424CF /* Home */,
+				85C7ECD82AA753B2008424CF /* Draw */,
+				85C7ECDF2AA756BC008424CF /* Profile */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		85C7ECD82AA753B2008424CF /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				85C7ECDB2AA75405008424CF /* Components */,
+				85C7ECD92AA753EC008424CF /* DrawView.swift */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
+		85C7ECDB2AA75405008424CF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				85C7ECDC2AA75410008424CF /* CanvasView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		85C7ECDE2AA75510008424CF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				85C7ECE32AA76672008424CF /* Components */,
+				856AB8AF2A3CE47800C125F3 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		85C7ECDF2AA756BC008424CF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		85C7ECE32AA76672008424CF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				85C7ECE42AA76696008424CF /* RoundedImage.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		85CD99982AACDE3000CCE68A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				85CD999D2AAF4CE700CCE68A /* WatchOSConnector.swift */,
+				85CD999A2AACDEA700CCE68A /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		85CD99992AACDE3900CCE68A /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+				851B66142AA261C80042F80E /* WiceOSApp.swift */,
+				851B66182AA261CB0042F80E /* Assets.xcassets */,
+				851B661A2AA261CB0042F80E /* Preview Content */,
+			);
+			path = Commom;
+			sourceTree = "<group>";
+		};
+		85CD999A2AACDEA700CCE68A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				851B66162AA261C80042F80E /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		851B66112AA261C80042F80E /* WiceOS Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851B66232AA261CB0042F80E /* Build configuration list for PBXNativeTarget "WiceOS Watch App" */;
+			buildPhases = (
+				851B660E2AA261C80042F80E /* Sources */,
+				851B660F2AA261C80042F80E /* Frameworks */,
+				851B66102AA261C80042F80E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WiceOS Watch App";
+			productName = "WiceOS Watch App";
+			productReference = 851B66122AA261C80042F80E /* WiceOS Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		856AB8A92A3CE47800C125F3 /* Wice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 856AB8B82A3CE47900C125F3 /* Build configuration list for PBXNativeTarget "Wice" */;
+			buildPhases = (
+				856AB8A62A3CE47800C125F3 /* Sources */,
+				856AB8A72A3CE47800C125F3 /* Frameworks */,
+				856AB8A82A3CE47800C125F3 /* Resources */,
+				851B66202AA261CB0042F80E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				851B661E2AA261CB0042F80E /* PBXTargetDependency */,
+			);
+			name = Wice;
+			productName = Wice;
+			productReference = 856AB8AA2A3CE47800C125F3 /* Wice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		856AB8A22A3CE47800C125F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					851B66112AA261C80042F80E = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					856AB8A92A3CE47800C125F3 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 856AB8A52A3CE47800C125F3 /* Build configuration list for PBXProject "Wice" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 856AB8A12A3CE47800C125F3;
+			productRefGroup = 856AB8AB2A3CE47800C125F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				856AB8A92A3CE47800C125F3 /* Wice */,
+				851B66112AA261C80042F80E /* WiceOS Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		851B66102AA261C80042F80E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851B661C2AA261CB0042F80E /* Preview Assets.xcassets in Resources */,
+				851B66192AA261CB0042F80E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		856AB8A82A3CE47800C125F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856AB8B52A3CE47900C125F3 /* Preview Assets.xcassets in Resources */,
+				856AB8B22A3CE47900C125F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		851B660E2AA261C80042F80E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851B66172AA261C80042F80E /* HomeView.swift in Sources */,
+				85CD999E2AAF4CE700CCE68A /* WatchOSConnector.swift in Sources */,
+				851B66152AA261C80042F80E /* WiceOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		856AB8A62A3CE47800C125F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856AB8B02A3CE47800C125F3 /* HomeView.swift in Sources */,
+				85CD999C2AAF4A5900CCE68A /* WatchOSConnector.swift in Sources */,
+				856AB8AE2A3CE47800C125F3 /* WiceApp.swift in Sources */,
+				85C7ECE52AA76696008424CF /* RoundedImage.swift in Sources */,
+				85C7ECDD2AA75410008424CF /* CanvasView.swift in Sources */,
+				85C7ECDA2AA753EC008424CF /* DrawView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		851B661E2AA261CB0042F80E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 851B66112AA261C80042F80E /* WiceOS Watch App */;
+			targetProxy = 851B661D2AA261CB0042F80E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		851B66212AA261CB0042F80E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WiceOS Watch App/Commom/Preview Content\"";
+				DEVELOPMENT_TEAM = Z86DZ4SUMG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WiceOS;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.br.Wice;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.Wice.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		851B66222AA261CB0042F80E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WiceOS Watch App/Commom/Preview Content\"";
+				DEVELOPMENT_TEAM = Z86DZ4SUMG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WiceOS;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.br.Wice;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.Wice.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		856AB8B62A3CE47900C125F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		856AB8B72A3CE47900C125F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		856AB8B92A3CE47900C125F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wice/Commom/Preview Content\"";
+				DEVELOPMENT_TEAM = Z86DZ4SUMG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.Wice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		856AB8BA2A3CE47900C125F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wice/Commom/Preview Content\"";
+				DEVELOPMENT_TEAM = Z86DZ4SUMG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.Wice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		851B66232AA261CB0042F80E /* Build configuration list for PBXNativeTarget "WiceOS Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851B66212AA261CB0042F80E /* Debug */,
+				851B66222AA261CB0042F80E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		856AB8A52A3CE47800C125F3 /* Build configuration list for PBXProject "Wice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856AB8B62A3CE47900C125F3 /* Debug */,
+				856AB8B72A3CE47900C125F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		856AB8B82A3CE47900C125F3 /* Build configuration list for PBXNativeTarget "Wice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856AB8B92A3CE47900C125F3 /* Debug */,
+				856AB8BA2A3CE47900C125F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 856AB8A22A3CE47800C125F3 /* Project object */;
+}
